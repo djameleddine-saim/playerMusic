@@ -81,8 +81,6 @@ def play():
 def on_song_end():
     if repeat_status:
         play()
-    elif random_status:
-        choose_random_song()
     else:
         next_song()
 
