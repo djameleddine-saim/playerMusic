@@ -4,7 +4,6 @@ import tkinter
 from tkinter import ttk
 from tkinter.filedialog import askdirectory
 import os
-import random
 import eyed3
 
 # Définissez le niveau de journalisation de la bibliothèque EyeD3 sur ERROR
@@ -15,7 +14,6 @@ p = False
 current_pos = 0
 
 repeat_status = False
-random_status = False
 
 # Espace réservé pour name_scrolling_task
 name_scrolling_task = str()
