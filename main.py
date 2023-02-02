@@ -207,22 +207,6 @@ def reset_progressbar():
     progressbar.config(value=current_pos)
 
 
-# Fonction pour choisir une chanson au hasard dans la liste de chansons
-def choose_random_song():
-    # Choisir une chanson au hasard dans la liste
-    random_song = random.choice(songlist)
-    # Activer la chanson choisie dans la liste de lecture
-    playing.activate(songlist.index(random_song))
-    # Désélectionner toutes les chansons dans la liste de lecture
-    playing.selection_clear(0, len(songlist) - 1)
-    # Activer la chanson choisie dans la liste de lecture
-    playing.activate(songlist.index(random_song))
-    # Sélectionner la chanson choisie dans la liste de lecture
-    playing.selection_set(songlist.index(random_song), last=songlist.index(random_song))
-    # Jouer la chanson choisie
-    play()
-
-
 def convert(seconds):
     # Convertissez le nombre total de secondes en quelques secondes en une minute
     seconds = seconds % (24 * 3600)
